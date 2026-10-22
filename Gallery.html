@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Developer: Sabari (Portfolio Reference) -->
+  <meta charset="utf-8">
+  <title>Tamil Nadu Events – Lotus Education</title>
+  <meta name="description"
+        content="Lotus Education district events across Tamil Nadu – Theni, Chennai, Coimbatore and more.">
+  <meta name="keywords"
+        content="Lotus Education, Tamil Nadu districts, Theni, education expo, student events, counselling">
+  <meta name="author" content="Lotus Education">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Template Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    /* WhatsApp floating button (from index) */
+    .whatsapp_float {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 25px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      transition: all 0.2s ease;
+    }
+
+    .whatsapp_float:hover {
+      transform: scale(1.1);
+      background-color: #20ba5a;
+    }
+
+    .whatsapp-icon {
+      vertical-align: middle;
+    }
+
+    .navbar-bg-helper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 0;
+      background-color: #ffffff;
+      z-index: 0;
+    }
+
+    .navbar-wrapper {
+      position: relative;
+      z-index: 2;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown .dropbtn {
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #fff;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 12px;
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .sub-dropdown {
+      position: relative;
+    }
+
+    .sub-dropdown-content {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      min-width: 160px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .sub-dropdown:hover .sub-dropdown-content {
+      display: block;
+    }
+
+    /* ========= Tamil Nadu District Events Section ========= */
+
+    .district-events-wrapper {
+      padding: 80px 0 40px 0;
+    }
+
+    .district-events-title {
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+    }
+
+    .district-events-title h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .district-event-block {
+      border-radius: 24px;
+      padding: 40px 28px;
+      margin-bottom: 30px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .district-event-block h3 {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+
+    .district-event-block p {
+      margin-bottom: 0.4rem;
+    }
+
+    .district-event-note {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .district-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #ffffffe6;
+      text-emphasis-color: #00008b;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .district-slider .item {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .district-slider .item img,
+    .district-slider .item video {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .district-slider .item video {
+      background: #000;
+    }
+
+    .owl-theme .owl-nav [class*='owl-'] {
+      border-radius: 999px !important;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+      width: 8px;
+      height: 8px;
+    }
+
+    /* 38 different soft gradient backgrounds (one per district) */
+    .district-bg-1 {
+      background: linear-gradient(135deg, #ed9247, #c3cfe2);
+    }
+
+    .district-bg-2 {
+      background: linear-gradient(135deg, #9ccf66, #b4f9ac);
+    }
+
+    .district-bg-3 {
+      background: linear-gradient(135deg, #891bd7, #ebedee);
+    }
+
+    .district-bg-4 {
+      background: linear-gradient(135deg, #f6d365, #fda085);
+    }
+
+    .district-bg-5 {
+      background: linear-gradient(135deg, #fc1d1d, #8fd3f4);
+    }
+
+    .district-bg-6 {
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    }
+
+    .district-bg-7 {
+      background: linear-gradient(135deg, #eb9e40, #d57eeb);
+    }
+
+    .district-bg-8 {
+      background: linear-gradient(135deg, #847cde, #8ec5fc);
+    }
+
+    .district-bg-9 {
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+    }
+
+    .district-bg-10 {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .district-bg-11 {
+      background: linear-gradient(135deg, #b63787, #e2d1f9);
+    }
+
+    .district-bg-12 {
+      background: linear-gradient(135deg, #fce38a, #f38181);
+    }
+
+    .district-bg-13 {
+      background: linear-gradient(135deg, #055485, #e2ebf0);
+    }
+
+    .district-bg-14 {
+      background: linear-gradient(135deg, #328a84, #43c6ac);
+    }
+
+    .district-bg-15 {
+      background: linear-gradient(135deg, #ca7600, #fcb69f);
+    }
+
+    .district-bg-16 {
+      background: linear-gradient(135deg, #c3cfe2, #e2ebf0);
+    }
+
+    .district-bg-17 {
+      background: linear-gradient(135deg, #f5f7fa, #b8c6db);
+    }
+
+    .district-bg-18 {
+      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    }
+
+    .district-bg-19 {
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    }
+
+    .district-bg-20 {
+      background: linear-gradient(135deg, #f14212, #ffd1ff);
+    }
+
+    .district-bg-21 {
+      background: linear-gradient(135deg, #ffd900, #ee9ca7);
+    }
+
+    .district-bg-22 {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+    }
+
+    .district-bg-23 {
+      background: linear-gradient(135deg, #da1717, #d1fdff);
+    }
+
+    .district-bg-24 {
+      background: linear-gradient(135deg, #307a0b, #e5eaf5);
+    }
+
+    .district-bg-25 {
+      background: linear-gradient(135deg, #d15d1e, #ba5370);
+    }
+
+    .district-bg-26 {
+      background: linear-gradient(135deg, #f256c8, #2f80ed);
+    }
+
+    .district-bg-27 {
+      background: linear-gradient(135deg, #218bc9, #acf0f2);
+    }
+
+    .district-bg-28 {
+      background: linear-gradient(135deg, #0b00dc, #e8defa);
+    }
+
+    .district-bg-29 {
+      background: linear-gradient(135deg, #ffd3a5, #fd6585);
+    }
+
+    .district-bg-30 {
+      background: linear-gradient(135deg, #9be15d, #00e3ae);
+    }
+
+    .district-bg-31 {
+      background: linear-gradient(135deg, #dd29bf, #fde2e4);
+    }
+
+    .district-bg-32 {
+      background: linear-gradient(135deg, #e0f7fa, #80deea);
+    }
+
+    .district-bg-33 {
+      background: linear-gradient(135deg, #9f7fce, #d1c4e9);
+    }
+
+    .district-bg-34 {
+      background: linear-gradient(135deg, #fff9c4, #fff59d);
+    }
+
+    .district-bg-35 {
+      background: linear-gradient(135deg, #daf170, #c8e6c9);
+    }
+
+    .district-bg-36 {
+      background: linear-gradient(135deg, #39dd24, #ffe0b2);
+    }
+
+    .district-bg-37 {
+      background: linear-gradient(135deg, #590067, #e1bee7);
+    }
+
+    .district-bg-38 {
+      background: linear-gradient(135deg, #4f9c98, #b2dfdb);
+    }
+
+    @media (max-width: 767.98px) {
+      .district-event-block {
+        padding: 26px 18px;
+      }
+
+      .district-event-block h3 {
+        font-size: 1.4rem;
+      }
+
+      .district-slider .item img,
+      .district-slider .item video {
+        height: 230px;
+      }
+    }
+  
+/* Full-screen slider media */
+.district-slider .item img,
+.district-slider .item video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.p{
+  color:black;
+}
+
+
+    /* Glass Navbar Global */
+    .container-fluid.sticky-top {
+      background: transparent !important;
+    }
+    .container-fluid.sticky-top > .position-absolute {
+      background: transparent !important;
+    }
+    .container-fluid.sticky-top .navbar {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(255, 255, 255, 0.10) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+
+    .district-event-block p {
+    color: #000 !important;
+  }
+  .district-event-note {
+    color: #000 !important;
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/9543387903?text=Hello%20Lotus%20Education%2C%20I%20want%20more%20details."
+     class="whatsapp_float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+  
+
+  <!-- Spinner -->
+  <div id="spinner"
+       class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Topbar Start -->
+  <div class="container-fluid topbar px-0 d-none d-lg-block">
+    <div class="container px-0">
+      <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find Location</a>
+            <a href="tel:+9543387903" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+9543387903</a>
+            <a href="mailto:LotusEducation@gmail.com" class="text-muted me-0"><i
+                class="fas fa-envelope text-primary me-2"></i>LotusEducation@gmail.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-flex align-items-center justify-content-end">
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-facebook-f text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-twitter text-white"></i></a>
+            <a href="https://www.instagram.com/lotus___education/"
+               class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-instagram text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i
+                class="fab fa-linkedin-in text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid sticky-top px-0">
+    <div class="navbar-bg-helper"></div>
+    <div class="container px-0 navbar-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="lotus_logo.png" width="200" height="80" alt="Lotus Education Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+
+            <!--__ Country Dropdown -->
+<div class="dropdown">
+    <a class="nav-item nav-link dropbtn" href="Country.html">Country</a>
+
+    <div class="dropdown-content">
+
+        <!-- India -->
+        <div class="sub-dropdown">
+            <a href="#">India ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Chennai</a>
+                <a href="#">Coimbatore</a>
+                <a href="#">Bangalore</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Delhi</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Pune</a>
+            </div>
+        </div>
+
+        <!-- USA -->
+        <div class="sub-dropdown">
+            <a href="#">USA ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">New York</a>
+                <a href="#">Los Angeles</a>
+                <a href="#">Chicago</a>
+                <a href="#">Houston</a>
+                <a href="#">San Francisco</a>
+                <a href="#">Boston</a>
+                <a href="#">Seattle</a>
+            </div>
+        </div>
+
+        <!-- United Kingdom -->
+        <div class="sub-dropdown">
+            <a href="#">UK ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">London</a>
+                <a href="#">Manchester</a>
+                <a href="#">Birmingham</a>
+                <a href="#">Liverpool</a>
+                <a href="#">Edinburgh</a>
+                <a href="#">Glasgow</a>
+                <a href="#">Leeds</a>
+            </div>
+        </div>
+
+        <!-- Australia -->
+        <div class="sub-dropdown">
+            <a href="#">Australia ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Sydney</a>
+                <a href="#">Melbourne</a>
+                <a href="#">Brisbane</a>
+                <a href="#">Perth</a>
+                <a href="#">Adelaide</a>
+                <a href="#">Canberra</a>
+                <a href="#">Gold Coast</a>
+            </div>
+        </div>
+
+        <!-- Canada -->
+        <div class="sub-dropdown">
+            <a href="#">Canada ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Toronto</a>
+                <a href="#">Vancouver</a>
+                <a href="#">Montreal</a>
+                <a href="#">Calgary</a>
+                <a href="#">Ottawa</a>
+                <a href="#">Edmonton</a>
+                <a href="#">Winnipeg</a>
+            </div>
+        </div>
+
+        <!-- Germany -->
+        <div class="sub-dropdown">
+            <a href="#">Germany ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Berlin</a>
+                <a href="#">Munich</a>
+                <a href="#">Frankfurt</a>
+                <a href="#">Hamburg</a>
+                <a href="#">Cologne</a>
+                <a href="#">Stuttgart</a>
+                <a href="#">Düsseldorf</a>
+            </div>
+        </div>
+
+        <!-- France -->
+        <div class="sub-dropdown">
+            <a href="#">France ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Paris</a>
+                <a href="#">Lyon</a>
+                <a href="#">Toulouse</a>
+                <a href="#">Nice</a>
+                <a href="#">Bordeaux</a>
+                <a href="#">Nantes</a>
+                <a href="#">Marseille</a>
+            </div>
+        </div>
+
+        <!-- Dubai / UAE -->
+        <div class="sub-dropdown">
+            <a href="#">Dubai / UAE ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Dubai</a>
+                <a href="#">Abu Dhabi</a>
+                <a href="#">Sharjah</a>
+                <a href="#">Ajman</a>
+                <a href="#">Ras Al Khaimah</a>
+                <a href="#">Fujairah</a>
+            </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="sub-dropdown">
+            <a href="#">Singapore ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Singapore City</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            <!-- Courses Dropdown -->
+            <div class="dropdown">
+              <a href="Courses.html" class="nav-item nav-link dropbtn">Courses</a>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <a href="#">Engineering ▸</a>
+                  <div class="sub-dropdown-content">
+                    <a href="#">Civil Engineering</a>
+                    <a href="#">Mechanical Engineering</a>
+                    <a href="#">Computer Science</a>
+                  </div>
+                </div>
+
+                <div class="sub-dropdown">
+                  <a href="#">Medical ▸</a>
+                  <div class="sub-dropdown-content">
+                    <a href="#">MBBS</a>
+                    <a href="#">BDS</a>
+                    <a href="#">Nursing</a>
+                  </div>
+                </div>
+
+                <div class="sub-dropdown">
+                  <a href="#">Arts & Science ▸</a>
+                  <div class="sub-dropdown-content">
+                    <a href="#">B.A</a>
+                    <a href="#">B.Sc</a>
+                    <a href="#">M.A</a>
+                  </div>
+                </div>
+
+                <a href="#">Management</a>
+                <a href="#">Law</a>
+              </div>
+            </div>
+
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="Gallery.html" class="nav-item nav-link active">Gallery</a>
+            <a href="Colleges.html" class="nav-item nav-link">Universities & Colleges</a>
+            <a href="FAQ.html" class="nav-item nav-link">FAQ</a>
+
+            <div class="d-flex align-items-center flex-nowrap pt-xl-0 ms-3">
+              <a href="Expo.html" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2">Expo / Events</a>
+            </div>
+
+            <div class="d-flex align-items-center flex-nowrap pt-xl-0 ms-3">
+              <a href="testimonial.html"
+                 class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2">Testimonial</a>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+    <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="bg-breadcrumb-single"></div>
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Expo Events</h4>
+                   
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+  <!-- Tamil Nadu District Events Section -->
+  <div class="container district-events-wrapper">
+    <div class="district-events-title">
+      <h1 class="mb-3">Lotus Education Events Across All 38 Districts of Tamil Nadu</h1>
+      <p class="text-muted">
+        ஒவ்வொரு மாவட்டத்திலும் நடத்தப்படும் Lotus Education நிகழ்வுகளின் சிறு தருணங்கள் – இடது பக்கம்
+        சுருக்கமான விளக்கம், வலது பக்கம் slide ஆகும் படங்கள் & வீடியோக்கள்.
+      </p>
+    </div>
+
+    <div id="district-events-container">
+      <!-- JS will insert 38 blocks here -->
+    </div>
+  </div>
+
+  
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <div class="position-relative mx-auto rounded-pill">
+              <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                     placeholder="Enter your email">
+              <button type="button"
+                      class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Explore</h4>
+            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+            <a href="Services.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+            <a href="Expo.html"><i class="fas fa-angle-right me-2"></i> Latest Projects</a>
+            <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonial</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i> Our Team</a>
+            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Contact Info</h4>
+            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Chennai, Tamil Nadu & Bangalore</a>
+            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+            <a href="tel:+9543387903"><i class="fas fa-phone me-2"></i> +9543 38 7903</a>
+            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+            <div class="d-flex align-items-center">
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item-post d-flex flex-column">
+            <h4 class="text-white mb-4">Popular Post</h4>
+            <div class="d-flex flex-column mb-3">
+              <p class="text-uppercase text-primary mb-2">Education</p>
+              <a href="#" class="text-body">Study Abroad Mega Expo Highlights</a>
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <p class="text-uppercase text-primary mb-2">Career</p>
+              <a href="#" class="text-body">Top Tips for Choosing the Right Course</a>
+            </div>
+            <div class="footer-btn text-start">
+              <a href="#" class="btn btn-light rounded-pill px-4">View All Post <i
+                  class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-md-0">
+          <span class="text-body"><a href="#" class="border-bottom text-primary"><i
+                class="fas fa-copyright text-light me-2"></i>
+              ZopTechnology</a>, All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end text-body">
+          Designed by <a class="border-bottom text-primary" href="https://zoptech.in/">ZOP Technologies</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- JS: jQuery + Bootstrap + OwlCarousel + Template -->
+  <script src="assets/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Page-specific JS: 38 district sections + per-district media + hash scroll -->
+  <script>
+    // Remove spinner when page ready + smooth scroll to hash
+    document.addEventListener('DOMContentLoaded', function () {
+      const spinner = document.getElementById('spinner');
+      if (spinner) {
+        setTimeout(() => spinner.classList.remove('show'), 500);
+      }
+
+      if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 600);
+        }
+      }
+    });
+
+    // CONFIG: all districts + their own media
+    // Change the src values to your real image / video paths
+    const districts = [
+      {
+        id: "Chennai",
+        label: "Chennai",
+        media: [
+          { type: "img", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_2.jpeg" },
+
+          { type: "img", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_4.jpeg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_video5.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_2.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_video2.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_video4.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_video6.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_video7.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          { type: "img", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_7.jpeg" },
+
+          { type: "img", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_8.jpeg" },
+
+          { type: "img", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_9.jpeg" },
+
+          { type: "video", src: "Lotus Education Content/chennai_pallikaranai/Chennai_pallikaranai_video8.mp4", poster: "Lotus Education Content/Chennai/poster.jpg" },
+
+          
+        ]
+      },
+
+        {
+        id: "Theni",
+        label: "Theni",
+        media: [
+          { type: "img", src: "Lotus Education Content/theni/theni1.jpeg" },
+
+          { type: "video", src: "Lotus Education Content/theni/theni_video3.mp4", poster: "Lotus Education Content/Theni/poster.jpg" },
+
+          { type: "img", src: "Lotus Education Content/theni/theni2.jpeg" },
+
+          { type: "img", src: "Lotus Education Content/theni/theni3.jpeg" },
+
+           { type: "video", src: "Lotus Education Content/theni/theni_video2.mp4", poster: "Lotus Education Content/Theni/poster.jpg" },
+
+          { type: "img", src: "Lotus Education Content/theni/theni4.jpeg" },
+
+          { type: "img", src: "Lotus Education Content/theni/theni5.jpeg" },
+
+          { type: "img", src: "Lotus Education Content/theni/theni6.jpeg" },
+
+          { type: "video", src: "Lotus Education Content/theni/theni_video1.mp4", poster: "Lotus Education Content/Theni/poster.jpg" },
+          
+            
+        ]
+      },
+      
+         {
+        id: "Kanchipuram",
+        label: "Kanchipuram",
+        media: [
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video3.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video1.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video2.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video4.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video5.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video7.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video8.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          { type: "video", src: "Lotus Education Content/Kanchipuram/kanchipuram_video9.mp4", poster: "Lotus Education Content/Kanchipuram/poster.jpg" },
+
+          
+          { type: "img", src: "Lotus Education Content/Kanchipuram/2.jpg" }
+          
+        ]
+      },
+
+
+
+      {
+        id: "Coimbatore",
+        label: "Coimbatore",
+        media: [
+          { type: "img", src: "Lotus Education Content/Coimbatore/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Coimbatore/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Coimbatore/video.mp4", poster: "Lotus Education Content/Coimbatore/poster.jpg" }
+        ]
+      },
+      {
+        id: "Madurai",
+        label: "Madurai",
+        media: [
+          { type: "img", src: "Lotus Education Content/Madurai/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Madurai/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Madurai/video.mp4", poster: "Lotus Education Content/Madurai/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tiruchirappalli",
+        label: "Tiruchirappalli",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tiruchirappalli/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tiruchirappalli/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tiruchirappalli/video.mp4", poster: "Lotus Education Content/Tiruchirappalli/poster.jpg" }
+        ]
+      },
+      {
+        id: "Salem",
+        label: "Salem",
+        media: [
+          { type: "img", src: "Lotus Education Content/Salem/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Salem/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Salem/video.mp4", poster: "Lotus Education Content/Salem/poster.jpg" }
+        ]
+      },
+      {
+        id: "Thanjavur",
+        label: "Thanjavur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Thanjavur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Thanjavur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Thanjavur/video.mp4", poster: "Lotus Education Content/Thanjavur/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tirunelveli",
+        label: "Tirunelveli",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tirunelveli/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tirunelveli/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tirunelveli/video.mp4", poster: "Lotus Education Content/Tirunelveli/poster.jpg" }
+        ]
+      },
+      {
+        id: "Erode",
+        label: "Erode",
+        media: [
+          { type: "img", src: "Lotus Education Content/Erode/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Erode/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Erode/video.mp4", poster: "Lotus Education Content/Erode/poster.jpg" }
+        ]
+      },
+      {
+        id: "Vellore",
+        label: "Vellore",
+        media: [
+          { type: "img", src: "Lotus Education Content/Vellore/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Vellore/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Vellore/video.mp4", poster: "Lotus Education Content/Vellore/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tiruppur",
+        label: "Tiruppur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tiruppur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tiruppur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tiruppur/video.mp4", poster: "Lotus Education Content/Tiruppur/poster.jpg" }
+        ]
+      },
+      {
+        id: "Dindigul",
+        label: "Dindigul",
+        media: [
+          { type: "img", src: "Lotus Education Content/Dindigul/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Dindigul/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Dindigul/video.mp4", poster: "Lotus Education Content/Dindigul/poster.jpg" }
+        ]
+      },
+      {
+        id: "Thoothukudi",
+        label: "Thoothukudi",
+        media: [
+          { type: "img", src: "Lotus Education Content/Thoothukudi/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Thoothukudi/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Thoothukudi/video.mp4", poster: "Lotus Education Content/Thoothukudi/poster.jpg" }
+        ]
+      },
+      {
+        id: "Karur",
+        label: "Karur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Karur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Karur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Karur/video.mp4", poster: "Lotus Education Content/Karur/poster.jpg" }
+        ]
+      },
+      {
+        id: "Kanyakumari",
+        label: "Kanyakumari",
+        media: [
+          { type: "img", src: "Lotus Education Content/Kanyakumari/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Kanyakumari/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Kanyakumari/video.mp4", poster: "Lotus Education Content/Kanyakumari/poster.jpg" }
+        ]
+      },
+      {
+        id: "Nilgiris",
+        label: "Nilgiris",
+        media: [
+          { type: "img", src: "Lotus Education Content/Nilgiris/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Nilgiris/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Nilgiris/video.mp4", poster: "Lotus Education Content/Nilgiris/poster.jpg" }
+        ]
+      },
+      {
+        id: "Virudhunagar",
+        label: "Virudhunagar",
+        media: [
+          { type: "img", src: "Lotus Education Content/Virudhunagar/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Virudhunagar/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Virudhunagar/video.mp4", poster: "Lotus Education Content/Virudhunagar/poster.jpg" }
+        ]
+      },
+      {
+        id: "Ramanathapuram",
+        label: "Ramanathapuram",
+        media: [
+          { type: "img", src: "Lotus Education Content/Ramanathapuram/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Ramanathapuram/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Ramanathapuram/video.mp4", poster: "Lotus Education Content/Ramanathapuram/poster.jpg" }
+        ]
+      },
+      {
+        id: "Sivagangai",
+        label: "Sivagangai",
+        media: [
+          { type: "img", src: "Lotus Education Content/Sivagangai/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Sivagangai/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Sivagangai/video.mp4", poster: "Lotus Education Content/Sivagangai/poster.jpg" }
+        ]
+      },
+      {
+        id: "Nagapattinam",
+        label: "Nagapattinam",
+        media: [
+          { type: "img", src: "Lotus Education Content/Nagapattinam/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Nagapattinam/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Nagapattinam/video.mp4", poster: "Lotus Education Content/Nagapattinam/poster.jpg" }
+        ]
+      },
+      {
+        id: "Cuddalore",
+        label: "Cuddalore",
+        media: [
+          { type: "img", src: "Lotus Education Content/Cuddalore/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Cuddalore/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Cuddalore/video.mp4", poster: "Lotus Education Content/Cuddalore/poster.jpg" }
+        ]
+      },
+      {
+        id: "Namakkal",
+        label: "Namakkal",
+        media: [
+          { type: "img", src: "Lotus Education Content/Namakkal/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Namakkal/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Namakkal/video.mp4", poster: "Lotus Education Content/Namakkal/poster.jpg" }
+        ]
+      },
+      {
+        id: "Dharmapuri",
+        label: "Dharmapuri",
+        media: [
+          { type: "img", src: "Lotus Education Content/Dharmapuri/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Dharmapuri/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Dharmapuri/video.mp4", poster: "Lotus Education Content/Dharmapuri/poster.jpg" }
+        ]
+      },
+      {
+        id: "Krishnagiri",
+        label: "Krishnagiri",
+        media: [
+          { type: "img", src: "Lotus Education Content/Krishnagiri/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Krishnagiri/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Krishnagiri/video.mp4", poster: "Lotus Education Content/Krishnagiri/poster.jpg" }
+        ]
+      },
+      {
+        id: "Perambalur",
+        label: "Perambalur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Perambalur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Perambalur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Perambalur/video.mp4", poster: "Lotus Education Content/Perambalur/poster.jpg" }
+        ]
+      },
+      {
+        id: "Pudukkottai",
+        label: "Pudukkottai",
+        media: [
+          { type: "img", src: "Lotus Education Content/Pudukkottai/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Pudukkottai/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Pudukkottai/video.mp4", poster: "Lotus Education Content/Pudukkottai/poster.jpg" }
+        ]
+      },
+      {
+        id: "Ariyalur",
+        label: "Ariyalur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Ariyalur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Ariyalur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Ariyalur/video.mp4", poster: "Lotus Education Content/Ariyalur/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tiruvarur",
+        label: "Tiruvarur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tiruvarur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tiruvarur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tiruvarur/video.mp4", poster: "Lotus Education Content/Tiruvarur/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tiruvannamalai",
+        label: "Tiruvannamalai",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tiruvannamalai/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tiruvannamalai/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tiruvannamalai/video.mp4", poster: "Lotus Education Content/Tiruvannamalai/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tiruvallur",
+        label: "Tiruvallur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tiruvallur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tiruvallur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tiruvallur/video.mp4", poster: "Lotus Education Content/Tiruvallur/poster.jpg" }
+        ]
+      },
+    
+      {
+        id: "Villupuram",
+        label: "Villupuram",
+        media: [
+          { type: "img", src: "Lotus Education Content/Villupuram/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Villupuram/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Villupuram/video.mp4", poster: "Lotus Education Content/Villupuram/poster.jpg" }
+        ]
+      },
+      {
+        id: "Kallakurichi",
+        label: "Kallakurichi",
+        media: [
+          { type: "img", src: "Lotus Education Content/Kallakurichi/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Kallakurichi/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Kallakurichi/video.mp4", poster: "Lotus Education Content/Kallakurichi/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tenkasi",
+        label: "Tenkasi",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tenkasi/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tenkasi/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tenkasi/video.mp4", poster: "Lotus Education Content/Tenkasi/poster.jpg" }
+        ]
+      },
+      {
+        id: "Ranipet",
+        label: "Ranipet",
+        media: [
+          { type: "img", src: "Lotus Education Content/Ranipet/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Ranipet/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Ranipet/video.mp4", poster: "Lotus Education Content/Ranipet/poster.jpg" }
+        ]
+      },
+      {
+        id: "Tirupattur",
+        label: "Tirupattur",
+        media: [
+          { type: "img", src: "Lotus Education Content/Tirupattur/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Tirupattur/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Tirupattur/video.mp4", poster: "Lotus Education Content/Tirupattur/poster.jpg" }
+        ]
+      },
+     
+      {
+        id: "Mayiladuthurai",
+        label: "Mayiladuthurai",
+        media: [
+          { type: "img", src: "Lotus Education Content/Mayiladuthurai/1.jpg" },
+          { type: "img", src: "Lotus Education Content/Mayiladuthurai/2.jpg" },
+          { type: "video", src: "Lotus Education Content/Mayiladuthurai/video.mp4", poster: "Lotus Education Content/Mayiladuthurai/poster.jpg" }
+        ]
+      }
+    ];
+
+    const tnShortLine = "Lotus Education career guidance, scholarship awareness & study abroad sessions conducted with local schools & colleges.";
+    const container = document.getElementById('district-events-container');
+
+    // Build all district blocks
+    districts.forEach((dist, index) => {
+      const bgClass = "district-bg-" + (index + 1); // 1..38
+
+      const block = document.createElement('div');
+      block.className = `district-event-block ${bgClass}`;
+      block.id = dist.id; // IMPORTANT: used by #hash and map
+
+      let sliderItems = "";
+      dist.media.forEach(item => {
+        if (item.type === "img") {
+          sliderItems += `
+          <div class="item">
+            <img src="${item.src}" alt="${dist.label} event">
+          </div>`;
+        } else if (item.type === "video") {
+          sliderItems += `
+          <div class="item">
+            <video playsinline muted autoplay controls ${item.poster ? `poster="${item.poster}"` : ""}>
+              <source src="${item.src}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>`;
+        }
+      });
+
+      block.innerHTML = `
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <span class="district-badge">District ${index + 1}</span>
+            <h3>${dist.label} District Events</h3>
+            <p>இந்த மாவட்டத்தில் மாணவர்கள் & பெற்றோர்களுக்காக Lotus Education பல்வேறு கல்வி விழிப்புணர்வு நிகழ்வுகளை நடத்தி வருகிறது.</p>
+            <p>${tnShortLine}</p>
+            <p class="district-event-note">
+              Highlights: school connect programs, college expo stalls, 1-to-1 counselling and on-spot application support.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="owl-carousel district-slider owl-theme">
+              ${sliderItems}
+            </div>
+          </div>
+        </div>
+      `;
+
+      container.appendChild(block);
+    });
+
+    // Initialize all district sliders
+    $(document).ready(function () {
+      $('.district-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+        responsive: {
+          0: { items: 1 },
+          768: { items: 1 },
+          992: { items: 1 }
+        }
+      });
+    });
+  
+// Auto-pause videos when slide changes
+$('.district-slider').on('changed.owl.carousel', function(event) {
+  $(this).find('video').each(function(_, video) {
+    video.pause();
+  });
+});
+
+
+// Auto-play videos when slide becomes active
+$('.district-slider').on('translated.owl.carousel', function(event) {
+  const current = $(this).find('.owl-item.active');
+  const video = current.find('video').get(0);
+  $(this).find('video').each(function(_, v) { v.pause(); });
+  if (video) { video.muted = true; video.play(); }
+});
+
+// When a video ends, go to next slide
+$('.district-slider').on('initialized.owl.carousel', function() {
+  $(this).find('video').each(function() {
+    this.onended = () => {
+      const slider = $(this).closest('.district-slider');
+      slider.trigger('next.owl.carousel');
+    };
+  });
+});
+
+</script>
+</body>
+
+</html>

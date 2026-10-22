@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Developer: Sabari (Portfolio Reference) -->
+<meta charset="utf-8"/>
+<title>Lotus_Education_Courses</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="keywords"/>
+<meta content="" name="description"/>
+<!-- Google Web Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icon Font Stylesheet -->
+<link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet"/>
+</link>
+  <style>
+    /* Glass Navbar Global */
+    .container-fluid.sticky-top {
+      background: transparent !important;
+    }
+    .container-fluid.sticky-top > .position-absolute {
+      background: transparent !important;
+    }
+    .container-fluid.sticky-top .navbar {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(255, 255, 255, 0.10) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  </style>
+
+</head>
+<body>
+<!-- Spinner Start -->
+<div class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" id="spinner">
+<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+<span class="sr-only">Loading...</span>
+</div>
+</div>
+<!-- Spinner End -->
+<!-- Topbar Start -->
+<div class="container-fluid topbar px-0 d-none d-lg-block">
+<div class="container px-0">
+<div class="row gx-0 align-items-center" style="height: 45px;">
+<div class="col-lg-8 text-center text-lg-start mb-lg-0">
+<div class="d-flex flex-wrap">
+<a class="text-muted me-4" href="#"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+<a class="text-muted me-4" href="#"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+<a class="text-muted me-0" href="#"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+</div>
+</div>
+<div class="col-lg-4 text-center text-lg-end">
+<div class="d-flex align-items-center justify-content-end">
+<a class="btn btn-primary btn-square rounded-circle nav-fill me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+<a class="btn btn-primary btn-square rounded-circle nav-fill me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+<a class="btn btn-primary btn-square rounded-circle nav-fill me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+<a class="btn btn-primary btn-square rounded-circle nav-fill me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Topbar End -->
+<!-- Navbar & Hero Start -->
+<div class="container-fluid sticky-top px-0">
+<div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
+</div>
+<div class="container px-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+<a class="navbar-brand p-0" href="index.html">
+<img alt="Lotus_Logo" height="80" src="lotus_logo.png" width="200"/>
+</a>
+<button class="navbar-toggler" data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+<span class="fa fa-bars"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<div class="navbar-nav ms-auto py-0">
+<a class="nav-item nav-link active" href="index.html">Home</a>
+<a class="nav-item nav-link" href="about.html">About</a>
+<!--__ Country Dropdown -->
+<div class="dropdown">
+    <a class="nav-item nav-link dropbtn" href="Country.html">Country</a>
+
+    <div class="dropdown-content">
+
+        <!-- India -->
+        <div class="sub-dropdown">
+            <a href="#">India ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Chennai</a>
+                <a href="#">Coimbatore</a>
+                <a href="#">Bangalore</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Delhi</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Pune</a>
+            </div>
+        </div>
+
+        <!-- USA -->
+        <div class="sub-dropdown">
+            <a href="#">USA ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">New York</a>
+                <a href="#">Los Angeles</a>
+                <a href="#">Chicago</a>
+                <a href="#">Houston</a>
+                <a href="#">San Francisco</a>
+                <a href="#">Boston</a>
+                <a href="#">Seattle</a>
+            </div>
+        </div>
+
+        <!-- United Kingdom -->
+        <div class="sub-dropdown">
+            <a href="#">UK ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">London</a>
+                <a href="#">Manchester</a>
+                <a href="#">Birmingham</a>
+                <a href="#">Liverpool</a>
+                <a href="#">Edinburgh</a>
+                <a href="#">Glasgow</a>
+                <a href="#">Leeds</a>
+            </div>
+        </div>
+
+        <!-- Australia -->
+        <div class="sub-dropdown">
+            <a href="#">Australia ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Sydney</a>
+                <a href="#">Melbourne</a>
+                <a href="#">Brisbane</a>
+                <a href="#">Perth</a>
+                <a href="#">Adelaide</a>
+                <a href="#">Canberra</a>
+                <a href="#">Gold Coast</a>
+            </div>
+        </div>
+
+        <!-- Canada -->
+        <div class="sub-dropdown">
+            <a href="#">Canada ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Toronto</a>
+                <a href="#">Vancouver</a>
+                <a href="#">Montreal</a>
+                <a href="#">Calgary</a>
+                <a href="#">Ottawa</a>
+                <a href="#">Edmonton</a>
+                <a href="#">Winnipeg</a>
+            </div>
+        </div>
+
+        <!-- Germany -->
+        <div class="sub-dropdown">
+            <a href="#">Germany ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Berlin</a>
+                <a href="#">Munich</a>
+                <a href="#">Frankfurt</a>
+                <a href="#">Hamburg</a>
+                <a href="#">Cologne</a>
+                <a href="#">Stuttgart</a>
+                <a href="#">Düsseldorf</a>
+            </div>
+        </div>
+
+        <!-- France -->
+        <div class="sub-dropdown">
+            <a href="#">France ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Paris</a>
+                <a href="#">Lyon</a>
+                <a href="#">Toulouse</a>
+                <a href="#">Nice</a>
+                <a href="#">Bordeaux</a>
+                <a href="#">Nantes</a>
+                <a href="#">Marseille</a>
+            </div>
+        </div>
+
+        <!-- Dubai / UAE -->
+        <div class="sub-dropdown">
+            <a href="#">Dubai / UAE ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Dubai</a>
+                <a href="#">Abu Dhabi</a>
+                <a href="#">Sharjah</a>
+                <a href="#">Ajman</a>
+                <a href="#">Ras Al Khaimah</a>
+                <a href="#">Fujairah</a>
+            </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="sub-dropdown">
+            <a href="#">Singapore ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Singapore City</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Courses Drop down menu -->
+<div class="dropdown">
+<a class="nav-item nav-link dropbtn" href="#">Courses</a>
+<div class="dropdown-content">
+<div class="sub-dropdown">
+<a href="Courses.html">Engineering ▸</a>
+<div class="sub-dropdown-content">
+<a href="#">Civil Engineering</a>
+<a href="#">Mechanical Engineering</a>
+<a href="#">Computer Science</a>
+</div>
+</div>
+<div class="sub-dropdown">
+<a href="#">Medical ▸</a>
+<div class="sub-dropdown-content">
+<a href="#">MBBS</a>
+<a href="#">BDS</a>
+<a href="#">Nursing</a>
+</div>
+</div>
+<div class="sub-dropdown">
+<a href="#">Arts &amp; Science ▸</a>
+<div class="sub-dropdown-content">
+<a href="#">B.A</a>
+<a href="#">B.Sc</a>
+<a href="#">M.A</a>
+</div>
+</div>
+<a href="#">Management</a>
+<a href="#">Law</a>
+</div>
+</div>
+<a class="nav-item nav-link" href="contact.html">Contact</a>
+<a class="nav-item nav-link" href="Gallery.html">Gallery</a>
+<a class="nav-item nav-link" href="Colleges.html">Universities &amp; Colleges</a>
+<a class="nav-item nav-link" href="FAQ.html">FAQ</a>
+<div class="d-flex align-items-center flex-nowrap pt-xl-0 ms-3">
+<a class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2" href="Expo.html">Expo / Events</a>
+</div>
+<div class="d-flex align-items-center flex-nowrap pt-xl-0 ms-3">
+<a class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2" href="testimonial.html">Testimonial</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+ <!-- WhatsApp Floating Button (single instance) -->
+  <a href="https://wa.me/919876543210?text=Hello%20Lotus%20Education%2C%20I%20want%20more%20details." class="whatsapp_float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+  <style>
+    /* WhatsApp floating button */
+    .whatsapp_float {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 25px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      transition: all 0.2s ease;
+    }
+
+    .whatsapp_float:hover {
+      transform: scale(1.1);
+      background-color: #20ba5a;
+    }
+
+    .whatsapp-icon {
+      vertical-align: middle;
+    }
+</style>
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+<div class="bg-breadcrumb-single"></div>
+<div class="container text-center py-5" style="max-width: 900px;">
+<h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Course Details
+</h4>
+
+</div>
+</div>
+<!-- Header End -->
+
+
+<!-- =========================
+     Courses Body START (REPLACED WITH FULL COURSE DETAILS)
+   ========================= -->
+<div class="container-fluid py-5">
+  <div class="container">
+
+    <div class="text-center mx-auto pb-4" style="max-width: 900px;">
+     
+      <h1 class="display-5">Complete course catalogue &amp; details</h1>
+      <p class="lead text-muted">Browse by category — click any course to view quick details (duration, eligibility, intake, starting fees) or open full description.</p>
+    </div>
+
+    <!-- Category filter -->
+    <div class="row mb-4">
+      <div class="col-12 d-flex flex-wrap gap-2 justify-content-center">
+        <button class="btn btn-outline-primary btn-sm category-filter active" data-filter="all">All</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="engineering">Engineering</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="medical">Medical</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="arts">Arts &amp; Science</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="management">Management</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="law">Law</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="it">IT &amp; Comp</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="vocational">Vocational</button>
+        <button class="btn btn-outline-primary btn-sm category-filter" data-filter="research">Postgrad &amp; Research</button>
+      </div>
+    </div>
+
+    <!-- Courses grid -->
+    <div class="row g-4" id="courses-grid">
+
+      <!-- ENGINEERING -->
+      <div class="col-md-6 col-lg-4 course-card engineering">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Tech — Computer Science &amp; Engineering (CSE)</h5>
+            <p class="mb-1"><strong>Duration:</strong> 4 years (8 semesters)</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCM</p>
+            <p class="mb-1"><strong>Intake:</strong> Annual (Jul–Aug)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹70,000 / year</p>
+            <p class="text-muted mb-3 small">Programming, algorithms, systems, AI/ML electives, internships.</p>
+            <div class="mt-auto">
+              <a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#cse-more" role="button">Read more</a>
+            </div>
+            <div class="collapse mt-3" id="cse-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Core programming, data structures, OS, DBMS, networks, software engineering, ML/AI foundations. Strong industry placements and project work.</p>
+                <p><strong>Core subjects:</strong> Programming, DSA, OS, DBMS, CN, SE, ML.</p>
+                <p><strong>Careers:</strong> Software developer, data scientist, ML engineer, DevOps, product roles.</p>
+                <p><strong>Entrance:</strong> JEE Main / State CET.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card engineering">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Tech — Electronics &amp; Communication (ECE)</h5>
+            <p class="mb-1"><strong>Duration:</strong> 4 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCM</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹65,000 / year</p>
+            <p class="text-muted mb-3 small">Analog/digital electronics, communications, embedded systems.</p>
+            <div class="mt-auto">
+              <a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#ece-more" role="button">Read more</a>
+            </div>
+            <div class="collapse mt-3" id="ece-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Circuit design, signal processing, VLSI, telecom systems and embedded design.</p>
+                <p><strong>Careers:</strong> Embedded engineer, RF engineer, hardware design, telecom.</p>
+                <p><strong>Entrance:</strong> JEE Main / State CET.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card engineering">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Tech — Mechanical Engineering</h5>
+            <p class="mb-1"><strong>Duration:</strong> 4 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCM</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹60,000 / year</p>
+            <p class="text-muted mb-3 small">Thermodynamics, design, manufacturing, CAD/CAM.</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#mech-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="mech-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Machine design, manufacturing processes, thermal systems, strong lab & workshop practice.</p>
+                <p><strong>Careers:</strong> Automotive, manufacturing, aerospace, R&amp;D.</p>
+                <p><strong>Entrance:</strong> JEE Main / State CET.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card engineering">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Tech — Civil Engineering</h5>
+            <p class="mb-1"><strong>Duration:</strong> 4 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCM</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹55,000 / year</p>
+            <p class="text-muted mb-3 small">Structures, construction, geotech, transportation engineering.</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#civil-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="civil-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Design and execution of infrastructure projects; includes surveying and site visits.</p>
+                <p><strong>Careers:</strong> Structural engineer, site engineer, construction management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card engineering">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Arch — Architecture</h5>
+            <p class="mb-1"><strong>Duration:</strong> 5 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with Mathematics</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹90,000 / year</p>
+            <p class="text-muted mb-3 small">Design studio, construction, building services and professional practice.</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#arch-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="arch-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Architectural design, studio work, history, materials and construction. Professional registration required to practice.</p>
+                <p><strong>Entrance:</strong> NATA / JEE (Paper 2).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEDICAL & ALLIED -->
+      <div class="col-md-6 col-lg-4 course-card medical">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MBBS — Medicine</h5>
+            <p class="mb-1"><strong>Duration:</strong> 5.5 years (incl. internship)</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCB + NEET-UG</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹2,00,000 / year (varies)</p>
+            <p class="text-muted mb-3 small">Clinical rotations, hospital-based learning and internship.</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#mbbs-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="mbbs-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Basic medical sciences through clinical specialties; mandatory internship for registration.</p>
+                <p><strong>Careers:</strong> Clinical practice, specialization (MD/MS), research, public health.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card medical">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BDS — Dental Surgery</h5>
+            <p class="mb-1"><strong>Duration:</strong> 5 years (incl. internship)</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCB + NEET (where applicable)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹1,00,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bds-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bds-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Dental anatomy, operative dentistry, prosthodontics, orthodontics, clinical rotations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card medical">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Sc Nursing</h5>
+            <p class="mb-1"><strong>Duration:</strong> 4 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCB &amp; English</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹30,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#nursing-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="nursing-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Nursing theory, clinical practice, community health and professional registration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card medical">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Pharm / D.Pharm — Pharmacy</h5>
+            <p class="mb-1"><strong>Duration:</strong> B.Pharm 4 years / D.Pharm 2 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCB/PCM</p>
+            <p class="mb-1"><strong>Fees:</strong> B.Pharm from ₹60,000 / year; D.Pharm from ₹25,000 total</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#pharm-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="pharm-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Pharmaceutical sciences including pharmaceutics, pharmacology and quality assurance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card medical">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BPT — Physiotherapy</h5>
+            <p class="mb-1"><strong>Duration:</strong> 4 years + 6 months internship</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with PCB</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹40,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bpt-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bpt-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Assessment and rehabilitation for musculoskeletal and neurological disorders; clinical placements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARTS, SCIENCE & COMMERCE -->
+      <div class="col-md-6 col-lg-4 course-card arts">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Sc — Science (CS / Physics / Chemistry / Maths)</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 with relevant subjects</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹25,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bsc-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bsc-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Subject-specific theory, labs and project work preparing for industry roles or higher study (M.Sc).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card arts">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.A — Arts (Tamil / English / History / Economics etc.)</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 in any stream</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹15,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#ba-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="ba-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Literature, social sciences and humanities with options for honours and electives. Good for civil services, media and teaching careers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card arts">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Com — Commerce</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 (commerce/any stream)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹20,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bcom-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bcom-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Accounting, finance, taxation and business law. Pathways to CA/CS/CMA and corporate roles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MANAGEMENT -->
+      <div class="col-md-6 col-lg-4 course-card management">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BBA — Business Administration</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹30,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bba-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bba-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Business fundamentals, internships and specialisations in marketing, finance, HR and operations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card management">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MBA — Master of Business Administration</h5>
+            <p class="mb-1"><strong>Duration:</strong> 2 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> Bachelor's degree + entrance exam (CAT/MAT/CMAT etc.)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹80,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#mba-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="mba-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Advanced management, case methods, internships, placement support and entrepreneurship programmes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAW -->
+      <div class="col-md-6 col-lg-4 course-card law">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">LLB — Law (3-yr / 5-yr)</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3 years (after graduation) or 5 years (integrated)</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 3-yr: Bachelor's degree; 5-yr: 10+2</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹40,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#llb-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="llb-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Constitutional law, criminal law, contracts, mooting and clinical legal practice.</p>
+                <p><strong>Entrance:</strong> CLAT / AILET / Univ tests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT & COMPUTER -->
+      <div class="col-md-6 col-lg-4 course-card it">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BCA — Computer Applications</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 (sometimes with Math)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹25,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bca-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bca-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Practical software development, web technologies and databases; project-based learning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card it">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MCA — Master of Computer Applications</h5>
+            <p class="mb-1"><strong>Duration:</strong> 2–3 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> Bachelor's degree (often requires Math/CS background)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹50,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#mca-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="mca-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Advanced software engineering, algorithms, system design and electives in AI/data science.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="col-md-6 col-lg-4 course-card vocational">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Ed — Bachelor of Education</h5>
+            <p class="mb-1"><strong>Duration:</strong> 2 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> Bachelor's degree</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹30,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bed-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bed-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Pedagogy, educational psychology and teaching practice for secondary schools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card vocational">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">M.Ed — Master of Education</h5>
+            <p class="mb-1"><strong>Duration:</strong> 2 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> B.Ed or equivalent</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹40,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#med-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="med-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Advanced theory in education, research methods and leadership in schooling systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOSPITALITY & DESIGN -->
+      <div class="col-md-6 col-lg-4 course-card vocational">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BHM — Hotel Management</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3–4 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹35,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bhm-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bhm-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Operations of hotels, F&amp;B, housekeeping, industrial training and internships.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card vocational">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">B.Des / BFA — Design &amp; Fine Arts</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3–4 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> 10+2 (portfolio / entrance for many)</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹70,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#bdes-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="bdes-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Product, graphic, fashion or animation design with studio work and portfolio development.</p>
+                <p><strong>Entrance:</strong> NID / CEED / Univ tests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIPLOMA & VOCATIONAL -->
+      <div class="col-md-6 col-lg-4 course-card vocational">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Diploma &amp; Certificate Courses (Vocational)</h5>
+            <p class="mb-1"><strong>Duration:</strong> Weeks to 2 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> Varies</p>
+            <p class="mb-1"><strong>Fees:</strong> ₹5,000 – ₹50,000 (total)</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#voc-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="voc-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Short-term skill programs: web development, digital marketing, accounts (Tally), hospitality, healthcare assistants and trades for quick employment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POSTGRAD & RESEARCH -->
+      <div class="col-md-6 col-lg-4 course-card research">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">M.Sc — Master of Science</h5>
+            <p class="mb-1"><strong>Duration:</strong> 2 years</p>
+            <p class="mb-1"><strong>Eligibility:</strong> B.Sc in relevant subject</p>
+            <p class="mb-1"><strong>Fees:</strong> From ₹30,000 / year</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#msc-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="msc-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Advanced subject knowledge, research project and preparation for PhD or specialist roles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 course-card research">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">PhD — Doctor of Philosophy</h5>
+            <p class="mb-1"><strong>Duration:</strong> 3–6 years (research)</p>
+            <p class="mb-1"><strong>Eligibility:</strong> Master's degree (NET/M.Phil sometimes required)</p>
+            <p class="mb-1"><strong>Fees / Funding:</strong> Often stipended / minimal fees (varies)</p>
+            <div class="mt-auto"><a class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" href="#phd-more" role="button">Read more</a></div>
+            <div class="collapse mt-3" id="phd-more">
+              <div class="card card-body">
+                <p><strong>Overview:</strong> Original research under supervision, thesis and viva; career paths in academia and high-end R&amp;D.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /#courses-grid -->
+
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <p class="text-muted">Can't find a course? <a href="contact.html">Contact us</a> for customised guidance or to request additional course listings.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- =========================
+     Courses Body END
+   ========================= -->
+<!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+<div class="container py-5">
+<div class="row g-5">
+<div class="col-md-6 col-lg-6 col-xl-3">
+<div class="footer-item d-flex flex-column">
+<div class="footer-item">
+
+<div class="position-relative mx-auto rounded-pill">
+<input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" placeholder="Enter your email" type="text"/>
+<button class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2" type="button">SignUp</button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 col-xl-3">
+<div class="footer-item d-flex flex-column">
+<h4 class="text-white mb-4">Explore</h4>
+<a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+<a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+<a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+<a href="#"><i class="fas fa-angle-right me-2"></i> Latest Projects</a>
+<a href="#"><i class="fas fa-angle-right me-2"></i> testimonial</a>
+<a href="#"><i class="fas fa-angle-right me-2"></i> Our Team</a>
+<a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 col-xl-3">
+<div class="footer-item d-flex flex-column">
+<h4 class="text-white mb-4">Contact Info</h4>
+<a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+<a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+<a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+<a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+<a class="mb-3" href=""><i class="fas fa-print me-2"></i> +012 345 67890</a>
+<div class="d-flex align-items-center">
+<a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-twitter"></i></a>
+<a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-instagram"></i></a>
+<a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 col-xl-3">
+  <div class="footer-item-post d-flex flex-column">
+    <h4 class="text-white mb-4">Popular Post</h4>
+
+    <div class="d-flex flex-column mb-3">
+      <p class="text-uppercase text-primary mb-2">Career Guidance</p>
+      <a class="text-body" href="#">
+        How Lotus Education Helps Students Choose the Right Career Path
+      </a>
+    </div>
+
+    <div class="d-flex flex-column mb-3">
+      <p class="text-uppercase text-primary mb-2">Study Abroad</p>
+      <a class="text-body" href="#">
+        Top Destinations for Indian Students — Expert Insights from Lotus Education
+      </a>
+    </div>
+
+    <div class="footer-btn text-start">
+      <a class="btn btn-light rounded-pill px-4" href="#">
+        View All Articles <i class="fa fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer End -->
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-md-6 text-center text-md-start mb-md-0">
+<span class="text-body"><a class="border-bottom text-primary" href="#"><i class="fas fa-copyright text-light me-2"></i>ZopTechnology</a>, All right reserved.</span>
+</div>
+<div class="col-md-6 text-center text-md-end text-body">
+<!--/*** The author’s attribution link must remain intact in the template. ***/-->
+<!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+    Designed by <a class="border-bottom text-primary" href="https://zoptech.in/">ZOP Technologies</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Copyright End -->
+<!-- Back to Top -->
+<a class="btn btn-primary btn-lg-square back-to-top" href="#"><i class="fa fa-arrow-up"></i></a>
+<!--Highlightin Nav bar ,menu-->
+<!-- Navbar active highlight: case-insensitive filename match -->
+
+<!-- Navbar active highlight: robust base-name match (handles renamed files like Courses_updated...) -->
+<script>
+(function () {
+  try {
+    // get current filename, lowercase
+    var full = (window.location.pathname || '').split('/').pop().toLowerCase() || 'index.html';
+    // get base name without extension and remove non-alphanum for safer compare
+    var base = full.split('.')[0].replace(/[^a-z0-9_-]/g, '');
+
+    document.querySelectorAll('.nav-link').forEach(function(link) {
+      var href = (link.getAttribute('href') || '').split('/').pop().toLowerCase() || 'index.html';
+      var hrefBase = href.split('.')[0].replace(/[^a-z0-9_-]/g, '');
+
+      // match if exact filename, or base names match, or current path contains hrefBase
+      if (href === full || hrefBase === base || full.indexOf(hrefBase) !== -1 || hrefBase.indexOf(base) !== -1) {
+        document.querySelectorAll('.nav-link.active').forEach(function(el){ el.classList.remove('active'); });
+        link.classList.add('active');
+      }
+    });
+  } catch (e) {
+    console.error('Navbar highlight script error:', e);
+  }
+})();
+</script>
+
+
+<!-- Category filter script (adds filtering behavior for category buttons) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = Array.from(document.querySelectorAll('.category-filter'));
+  const cards = Array.from(document.querySelectorAll('.course-card'));
+
+  function setFilter(cat) {
+    filters.forEach(f => f.classList.toggle('active', f.dataset.filter === cat));
+    if (cat === 'all') {
+      cards.forEach(c => c.style.display = '');
+    } else {
+      cards.forEach(c => {
+        if (c.classList.contains(cat)) c.style.display = '';
+        else c.style.display = 'none';
+      });
+    }
+    // trigger potential layout scripts
+    window.dispatchEvent(new Event('resize'));
+  }
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      setFilter(this.dataset.filter);
+    });
+    btn.setAttribute('role', 'button');
+    btn.setAttribute('tabindex', '0');
+    btn.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.click();
+      }
+    });
+  });
+
+  // initialize default
+  setFilter('all');
+});
+</script>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>

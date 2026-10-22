@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Expo & Events – Lotus Education</title>
+  <meta name="description"
+        content="Lotus Education Mega 2025 Expo and upcoming higher education events across Tamil Nadu.">
+  <meta name="keywords"
+        content="Lotus Education, Mega 2025 Expo, education expo, Dharmapuri, career guidance, study abroad, spot admission">
+  <meta name="author" content="Lotus Education">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Bootstrap & Template Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    /* WhatsApp floating button */
+    .whatsapp_float {
+      position: fixed;
+      bottom: 90px;
+      right: 30px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 25px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      transition: all 0.2s ease;
+    }
+
+    .whatsapp_float:hover {
+      transform: scale(1.1);
+      background-color: #20ba5a;
+    }
+
+    .whatsapp-icon {
+      vertical-align: middle;
+    }
+
+    .navbar-bg-helper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 0;
+      background-color: #ffffff;
+      z-index: 0;
+    }
+
+    .navbar-wrapper {
+      position: relative;
+      z-index: 2;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown .dropbtn {
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #fff;
+      min-width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 12px;
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .sub-dropdown {
+      position: relative;
+    }
+
+    .sub-dropdown-content {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      min-width: 160px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .sub-dropdown:hover .sub-dropdown-content {
+      display: block;
+    }
+
+    /* Glass Navbar */
+    .container-fluid.sticky-top .navbar {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(255, 255, 255, 0.10) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Premium Hero */
+    .premium-hero {
+      max-width: 1400px;
+      margin: 0 auto 40px auto;
+    }
+
+    .premium-tagline {
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #0d6efd;
+      font-size: 0.85rem;
+    }
+
+    .premium-title {
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+    }
+
+    .premium-subtitle {
+      color: #555;
+      font-size: 0.98rem;
+    }
+
+    .hero-pill {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: #ff6b00;
+      color: #fff;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+    }
+
+    .hero-meta {
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    .hero-meta i {
+      color: #ff6b00;
+      margin-right: 6px;
+    }
+
+    .hero-feature-list li {
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    .hero-feature-list i {
+      color: #0d6efd;
+      margin-right: 6px;
+    }
+
+    .hero-poster-wrap {
+      max-width: 430px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-poster-wrap .item img {
+      border-radius: 20px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.20);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-poster-wrap .owl-dots .owl-dot span {
+      width: 8px;
+      height: 10px;
+    }
+
+    /* Countdown */
+    .premium-countdown {
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .count-box {
+      min-width: 80px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(13, 110, 253, 0.15);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .count-box span.value {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .count-box span.label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #666;
+    }
+
+    /* Upcoming Events Cards */
+    .premium-events .section-heading {
+      max-width: 800px;
+    }
+
+    .premium-events .event-card {
+      border-radius: 18px;
+      overflow: hidden;
+      width:500px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+      background: rgba(255, 255, 255, 0.96);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      height: 100%;
+    }
+
+    .premium-events .event-card:hover {
+      transform: translateY(0);
+      box-shadow: 0 18px 40px #00000029;
+    }
+
+    .premium-events .event-img {
+      max-height: 210px;
+      overflow: hidden;
+    }
+
+    .premium-events .event-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .premium-events .event-body h5 {
+      font-weight: 700;
+    }
+
+    .badge-pill-soft {
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: rgba(13, 110, 253, 0.08);
+      color: #0d6efd;
+      font-weight: 600;
+    }
+
+    /* Premium Popup */
+    /* Premium Popup (Fully Optimized) */
+.expo-popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 15, 39, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 15px;
+}
+
+.expo-popup-backdrop.show {
+  display: flex;
+}
+
+.expo-popup-card {
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  text-align: center;
+  position: relative;
+}
+
+/* Allow smooth scrolling inside popup */
+.expo-popup-card::-webkit-scrollbar {
+  width: 6px;
+}
+.expo-popup-card::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.expo-popup-card img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.expo-popup-x {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #444;
+  z-index: 10;
+}
+
+.expo-popup-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
+.expo-popup-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 10px 0 20px 0;
+  padding: 0 5px;
+}
+
+/* OK Button always visible */
+.expo-popup-close {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  font-weight: 600;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0;
+}
+
+
+    /* Contact box tweaks */
+    .contact-item {
+      border-radius: 20px;
+    }
+
+    @media (max-width: 991.98px) {
+      .hero-poster-wrap {
+        margin-top: 25px;
+      }
+    }
+
+    @media (max-width: 676px) {
+      .premium-title {
+        font-size: 1.9rem;
+      }
+
+      .count-box {
+        min-width: 90px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/9543387903?text=Hello%20Lotus%20Education%2C%20I%20want%20more%20details%20about%20your%20Expo."
+     class="whatsapp_float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+  <!-- Spinner -->
+  <div id="spinner"
+       class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Topbar Start -->
+  <div class="container-fluid topbar px-0 d-none d-lg-block">
+    <div class="container px-0">
+      <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find Location</a>
+            <a href="tel:+9543387903" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+9543387903</a>
+            <a href="mailto:LotusEducation@gmail.com" class="text-muted me-0"><i
+                class="fas fa-envelope text-primary me-2"></i>LotusEducation@gmail.com</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-flex align-items-center justify-content-end">
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-facebook-f text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-twitter text-white"></i></a>
+            <a href="https://www.instagram.com/lotus___education/"
+               class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-instagram text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i
+                class="fab fa-linkedin-in text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid sticky-top px-0">
+    <div class="navbar-bg-helper"></div>
+    <div class="container px-0 navbar-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 px-4">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="lotus_logo.png" width="200" height="80" alt="Lotus Education Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+
+            <!--__ Country Dropdown -->
+<div class="dropdown">
+    <a class="nav-item nav-link dropbtn" href="Country.html">Country</a>
+
+    <div class="dropdown-content">
+
+        <!-- India -->
+        <div class="sub-dropdown">
+            <a href="#">India ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Chennai</a>
+                <a href="#">Coimbatore</a>
+                <a href="#">Bangalore</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Delhi</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Pune</a>
+            </div>
+        </div>
+
+        <!-- USA -->
+        <div class="sub-dropdown">
+            <a href="#">USA ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">New York</a>
+                <a href="#">Los Angeles</a>
+                <a href="#">Chicago</a>
+                <a href="#">Houston</a>
+                <a href="#">San Francisco</a>
+                <a href="#">Boston</a>
+                <a href="#">Seattle</a>
+            </div>
+        </div>
+
+        <!-- United Kingdom -->
+        <div class="sub-dropdown">
+            <a href="#">UK ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">London</a>
+                <a href="#">Manchester</a>
+                <a href="#">Birmingham</a>
+                <a href="#">Liverpool</a>
+                <a href="#">Edinburgh</a>
+                <a href="#">Glasgow</a>
+                <a href="#">Leeds</a>
+            </div>
+        </div>
+
+        <!-- Australia -->
+        <div class="sub-dropdown">
+            <a href="#">Australia ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Sydney</a>
+                <a href="#">Melbourne</a>
+                <a href="#">Brisbane</a>
+                <a href="#">Perth</a>
+                <a href="#">Adelaide</a>
+                <a href="#">Canberra</a>
+                <a href="#">Gold Coast</a>
+            </div>
+        </div>
+
+        <!-- Canada -->
+        <div class="sub-dropdown">
+            <a href="#">Canada ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Toronto</a>
+                <a href="#">Vancouver</a>
+                <a href="#">Montreal</a>
+                <a href="#">Calgary</a>
+                <a href="#">Ottawa</a>
+                <a href="#">Edmonton</a>
+                <a href="#">Winnipeg</a>
+            </div>
+        </div>
+
+        <!-- Germany -->
+        <div class="sub-dropdown">
+            <a href="#">Germany ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Berlin</a>
+                <a href="#">Munich</a>
+                <a href="#">Frankfurt</a>
+                <a href="#">Hamburg</a>
+                <a href="#">Cologne</a>
+                <a href="#">Stuttgart</a>
+                <a href="#">Düsseldorf</a>
+            </div>
+        </div>
+
+        <!-- France -->
+        <div class="sub-dropdown">
+            <a href="#">France ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Paris</a>
+                <a href="#">Lyon</a>
+                <a href="#">Toulouse</a>
+                <a href="#">Nice</a>
+                <a href="#">Bordeaux</a>
+                <a href="#">Nantes</a>
+                <a href="#">Marseille</a>
+            </div>
+        </div>
+
+        <!-- Dubai / UAE -->
+        <div class="sub-dropdown">
+            <a href="#">Dubai / UAE ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Dubai</a>
+                <a href="#">Abu Dhabi</a>
+                <a href="#">Sharjah</a>
+                <a href="#">Ajman</a>
+                <a href="#">Ras Al Khaimah</a>
+                <a href="#">Fujairah</a>
+            </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="sub-dropdown">
+            <a href="#">Singapore ▸</a>
+            <div class="sub-dropdown-content">
+                <a href="#">Singapore City</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            <div class="dropdown">
+              <a href="Courses.html" class="nav-item nav-link dropbtn">Courses</a>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <a href="#">Engineering ▸</a>
+                  <div class="sub-dropdown-content">
+                    <a href="#">Civil Engineering</a>
+                    <a href="#">Mechanical Engineering</a>
+                    <a href="#">Computer Science</a>
+                  </div>
+                </div>
+
+                <div class="sub-dropdown">
+                  <a href="#">Medical ▸</a>
+                  <div class="sub-dropdown-content">
+                    <a href="#">MBBS</a>
+                    <a href="#">BDS</a>
+                    <a href="#">Nursing</a>
+                  </div>
+                </div>
+
+                <div class="sub-dropdown">
+                  <a href="#">Arts & Science ▸</a>
+                  <div class="sub-dropdown-content">
+                    <a href="#">B.A</a>
+                    <a href="#">B.Sc</a>
+                    <a href="#">M.A</a>
+                  </div>
+                </div>
+
+                <a href="#">Management</a>
+                <a href="#">Law</a>
+              </div>
+            </div>
+
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="Gallery.html" class="nav-item nav-link">Gallery</a>
+            <a href="Colleges.html" class="nav-item nav-link">Universities & Colleges</a>
+            <a href="FAQ.html" class="nav-item nav-link">FAQ</a>
+
+            <div class="d-flex align-items-center flex-nowrap pt-xl-0 ms-3">
+              <a href="Expo.html" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2">Expo / Events</a>
+            </div>
+
+            <div class="d-flex align-items-center flex-nowrap pt-xl-0 ms-3">
+              <a href="testimonial.html"
+                 class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2">Testimonial</a>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-breadcrumb">
+    <div class="bg-breadcrumb-single"></div>
+    <div class="container text-center py-5" style="max-width: 900px;">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Expo Events</h4>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- Mega 2025 Expo Hero + Countdown -->
+  <div class="container py-5">
+    <div class="premium-hero">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="hero-pill">Mega 2025 Expo – Dharmapuri</span>
+          <h5 class="premium-tagline mt-3">Lotus Education presents</h5>
+          <h1 class="premium-title mb-2">+2 அடுத்து என்ன படிக்கலாம்?</h1>
+          <p class="premium-subtitle mb-3">
+            Career guidance mega expo for +2 students & parents – explore Medical, Engineering, Law, Pilot, Aviation,
+            Arts & Science and all major courses with top universities and colleges under one roof.
+          </p>
+
+          <div class="hero-meta">
+            <p class="mb-1">
+              <i class="bi bi-calendar-event"></i>
+              <strong>Date:</strong> 03-04-2025 &nbsp; | &nbsp;
+              <strong>Time:</strong> 8.30 AM – 2.30 PM
+            </p>
+            <p class="mb-1">
+              <i class="bi bi-geo-alt"></i>
+              <strong>Venue:</strong> Dharmapuri Rotary Charitable Trust – Rotary Hall,<br>
+              Krishnagiri Main Road, Dharmapuri – 636701
+            </p>
+            <p class="mb-2">
+              <i class="bi bi-laptop"></i>
+              <strong>Special:</strong> Free Gadgets for Spot Admission (Terms & conditions apply)
+            </p>
+          </div>
+
+          <ul class="list-unstyled hero-feature-list mt-3">
+            <li><i class="bi bi-check-circle"></i> 20+ Top Universities & 30+ Top Colleges participating</li>
+            <li><i class="bi bi-check-circle"></i> 1-to-1 counselling, course selection & scholarship guidance</li>
+            <li><i class="bi bi-check-circle"></i> Study in India & Abroad – complete support in one place</li>
+            <li><i class="bi bi-check-circle"></i> Parents focused sessions on future career opportunities</li>
+          </ul>
+
+          <div class="mt-4">
+            <div id="expoCountdown" class="premium-countdown d-flex">
+              <div class="count-box">
+                <span id="cd-days" class="value">45</span>
+                <span class="label">Days</span>
+              </div>
+              <div class="count-box">
+                <span id="cd-hours" class="value">8</span>
+                <span class="label">Hours</span>
+              </div>
+              <div class="count-box">
+                <span id="cd-mins" class="value">32</span>
+                <span class="label">Minutes</span>
+              </div>
+              <div class="count-box">
+                <span id="cd-secs" class="value">10</span>
+                <span class="label">Seconds</span>
+              </div>
+            </div>
+            <p class="small text-muted mt-2 mb-0">
+              Countdown to Mega 2025 Expo – Dharmapuri.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-poster-wrap">
+            <div class="owl-carousel hero-poster-slider">
+              <div class="item">
+                <img src="img/Expo1.png" alt="Mega 2025 Expo Poster">
+              </div>
+              <div class="item">
+                <img src="img/Lotus Education 18-2.jpg" alt="Participating Colleges Poster">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Premium Popup with Image -->
+  <div id="expoAlert" class="expo-popup-backdrop">
+    <div class="expo-popup-card">
+      <span class="expo-popup-x" onclick="closeExpoPopup()">&times;</span>
+      <img src="img/Expo1.png" alt="Lotus Education Expo Poster">
+      <h4 class="expo-popup-title">Mega 2025 Expo – Dates Confirmed</h4>
+      <p class="expo-popup-text">
+        Dharmapuri Mega 2025 Expo is scheduled on <strong>03-04-2025</strong>. Limited counselling slots and spot
+        admission opportunities are available. Watch this page for updates or message us on WhatsApp for priority entry.
+      </p>
+      <button class="expo-popup-close" onclick="closeExpoPopup()">Okay, Got It</button>
+    </div>
+  </div>
+
+  <!-- Contact Start (Advanced Glass Effect) -->
+<section class="contact-glass-wrapper py-5">
+  <div class="container py-5">
+    <div class="row g-4 align-items-center">
+
+      <div class="col-lg-5">
+        <div class="contact-info-glass">
+          <h1 class="text-white fw-bold mb-3">Get in Touch</h1>
+          <p class="text-light mb-4">
+            We are here to assist you with admissions, scholarships, counseling and study plans.
+          </p>
+
+          <div class="info-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <span>123 Ranking Street, Coimbatore, Tamil Nadu</span>
+          </div>
+
+          <div class="info-item">
+            <i class="fa fa-phone-alt"></i>
+            <span>+91 9876543210</span>
+          </div>
+
+          <div class="info-item">
+            <i class="fa fa-envelope"></i>
+            <span>info@lotusedu.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="contact-form-glass">
+          <form>
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <input type="text" class="glass-input" placeholder="Full Name">
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="glass-input" placeholder="Email">
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" class="glass-input" placeholder="Phone Number">
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" class="glass-input" placeholder="Subject">
+              </div>
+
+              <div class="col-12">
+                <textarea class="glass-input" placeholder="Message" style="height: 150px;"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button class="glass-btn w-100 py-3">Send Message</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Contact End (Advanced Glass Effect) -->
+
+<style>
+.contact-glass-wrapper {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px) saturate(200%);
+}
+.contact-info-glass {
+  padding: 35px;
+  border-radius: 20px;
+  background: #00008b;
+  border: 1px solid rgba(255,255,255,0.20);
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease-in-out;
+}
+.contact-info-glass:hover {
+  background:#8201beda ;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(255,255,255,0.25);
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.info-item i {
+  font-size: 20px;
+  color: 00008b;
+}
+.contact-form-glass {
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(18px);
+  transition: 0.3s;
+}
+.contact-form-glass:hover {
+  background: rgba(255,255,255,0.20);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+}
+.glass-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.25);
+  color: #000;
+  font-size: 14px;
+  transition: 0.3s;
+  outline: none;
+}
+.glass-input:focus {
+  background: rgba(255,255,255,0.45);
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13,110,253,0.6);
+}
+.glass-btn {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.25s;
+}
+.glass-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(13,110,253,0.55);
+}
+@media (max-width: 768px) {
+  .contact-info-glass, .contact-form-glass {
+    padding: 22px;
+  }
+}
+</style>
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <div class="position-relative mx-auto rounded-pill">
+              <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                     placeholder="Enter your email">
+              <button type="button"
+                      class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Explore</h4>
+            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+            <a href="Services.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+            <a href="Expo.html"><i class="fas fa-angle-right me-2"></i> Expo & Events</a>
+            <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonial</a>
+            <a href="#"><i class="fas fa-angle-right me-2"></i> Our Team</a>
+            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Contact Info</h4>
+            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Chennai, Tamil Nadu & Bangalore</a>
+            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
+            <a href="tel:+9543387903"><i class="fas fa-phone me-2"></i> +9543 38 7903</a>
+            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+            <div class="d-flex align-items-center">
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item-post d-flex flex-column">
+            <h4 class="text-white mb-4">Popular Post</h4>
+            <div class="d-flex flex-column mb-3">
+              <p class="text-uppercase text-primary mb-2">Education</p>
+              <a href="#" class="text-body">Study Abroad Mega Expo Highlights</a>
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <p class="text-uppercase text-primary mb-2">Career</p>
+              <a href="#" class="text-body">Top Tips for Choosing the Right Course</a>
+            </div>
+            <div class="footer-btn text-start">
+              <a href="#" class="btn btn-light rounded-pill px-4">View All Post <i
+                  class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-md-0">
+          <span class="text-body"><a href="#" class="border-bottom text-primary"><i
+                class="fas fa-copyright text-light me-2"></i>
+              ZopTechnology</a>, All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end text-body">
+          Designed By <a class="border-bottom text-primary" href="https://Zop.com">Zop Technologies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- JS: jQuery + Bootstrap + Template -->
+  <script src="assets/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Page-specific JS -->
+  <script>
+    // Remove spinner when page ready
+    document.addEventListener('DOMContentLoaded', function () {
+      const spinner = document.getElementById('spinner');
+      if (spinner) {
+        setTimeout(() => spinner.classList.remove('show'), 500);
+      }
+    });
+
+    // Countdown timer – Mega 2025 Expo (03-04-2025 08:30 IST)
+    const targetDate = new Date("2025-04-03T08:30:00+05:30");
+
+    function updateCountdown() {
+      const now = new Date();
+      let diff = targetDate - now;
+      if (diff < 0) diff = 0;
+      const sec = Math.floor(diff / 1000);
+      const days = Math.floor(sec / (3600 * 24));
+      const hours = Math.floor((sec % (3600 * 24)) / 3600);
+      const mins = Math.floor((sec % 3600) / 60);
+      const secs = sec % 60;
+      const pad = (n) => String(n).padStart(2, '0');
+      const dEl = document.getElementById('cd-days');
+      if (dEl) {
+        dEl.textContent = pad(days);
+        document.getElementById('cd-hours').textContent = pad(hours);
+        document.getElementById('cd-mins').textContent = pad(mins);
+        document.getElementById('cd-secs').textContent = pad(secs);
+      }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Popup logic
+   function openExpoPopup() { document.getElementById('expoAlert').classList.add('show'); }
+function closeExpoPopup() { document.getElementById('expoAlert').classList.remove('show'); }
+
+    window.addEventListener('load', function () {
+      // Show popup after small delay
+      setTimeout(openExpoPopup, 1200);
+    });
+
+    // Hero poster slider (7s autoplay)
+    $(document).ready(function () {
+      $('.hero-poster-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: true
+      });
+    });
+  </script>
+
+</body>
+
+</html>
